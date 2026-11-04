@@ -1,161 +1,170 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfólio pessoal de Caio Oliveira, desenvolvedor de software."
-    />
-    <meta name="theme-color" content="#070b13" />
-    <title>Aymar Silva | Desenvolvedor de software</title>
-  </head>
 
-  <body>
-    <header>
-      <a href="#inicio">aymar.dev</a>
-      <nav aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#certificados">Certificados</a>
-        <a href="#contato">Contato</a>
-      </nav>
-      <a href="#contato">Vamos conversar</a>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio pessoal de Aymar Silva, desenvolvedor de software." />
+  <meta name="theme-color" content="#070b13" />
+  <title>Aymar Silva | Desenvolvedor de software</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <main>
-      <section id="inicio">
-        <p>Disponível para novos desafios</p>
-        <h1>Construo produtos digitais com propósito.</h1>
-        <p>
-          Sou Caio, desenvolvedor de software focado em transformar problemas
+<body>
+  <header class="cabecalho-site">
+    <a class="marca" href="#inicio" aria-label="Aymar Silva - início">aymar<span>.dev</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="botao botao-pequeno" href="#contato">Vamos conversar <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main>
+    <section class="inicio secao-escura" id="inicio">
+      <div class="conteudo-inicio">
+        <p class="disponibilidade"><span></span> Disponível para novos desafios</p>
+        <h1>Construo produtos<br />digitais com <em>propósito.</em></h1>
+        <p class="descricao-inicio">
+          Sou Aymar, desenvolvedor de software focado em transformar problemas
           complexos em experiências simples, rápidas e memoráveis.
         </p>
-        <p>
-          <a href="#projetos">Explorar trabalho</a>
-          <a href="#contato">Entrar em contato</a>
-        </p>
-        <figure>
-          <img
-            src=""
-            alt="Retrato"
-          />
-          <figcaption>
-            <span>software developer</span>
-            <strong>Construindo o próximo.</strong>
-          </figcaption>
-        </figure>
-        <p>experiência</p>
-        <p>5+ anos</p>
-      </section>
+        <div class="acoes-inicio">
+          <a class="botao" href="#projetos">Explorar trabalho <span aria-hidden="true">→</span></a>
+          <a class="botao botao-contorno" href="#contato">Entrar em contato</a>
+        </div>
+      </div>
+      <figure class="figura-inicio">
+        <div class="brilho-inicio"></div>
+        <img
+          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+          alt="Retrato de um desenvolvedor de software" />
+        <figcaption>
+          <span>desenvolvedor de software</span>
+          <strong>Construindo o próximo.</strong>
+        </figcaption>
+      </figure>
+    </section>
 
-      <section id="sobre">
-        <header>
-          <p>01 — sobre mim</p>
-          <h2>Código que resolve. Design que conecta.</h2>
-          <p>
-            Meu trabalho vive no encontro entre engenharia bem pensada e
-            experiências que as pessoas realmente gostam de usar.
-          </p>
-        </header>
-        <p>
-          Atuo de ponta a ponta: da descoberta e arquitetura à última interação
-          da interface. Gosto de sistemas claros, componentes reutilizáveis e
-          times que compartilham curiosidade.
-        </p>
-        <p>
-          Hoje, meu foco está em criar produtos escaláveis com React, TypeScript
-          e Node.js — sempre cuidando da performance, acessibilidade e das
-          pessoas por trás dos dados.
-        </p>
-        <ul>
-          <li>Arquitetura limpa</li>
-          <li>Produto com propósito</li>
-          <li>Colaboração real</li>
+    <section class="sobre secao-clara" id="sobre">
+      <div class="introducao-secao">
+        <p class="rotulo"><span>01</span> sobre mim</p>
+        <h2>Código que resolve.<br />Design que <em>conecta.</em></h2>
+        <p>Meu trabalho vive no encontro entre engenharia bem pensada e experiências que as pessoas realmente gostam de
+          usar.</p>
+      </div>
+      <div class="texto-sobre">
+        <p>Atuo de ponta a ponta: da descoberta e arquitetura à última interação da interface. Gosto de sistemas claros,
+          componentes reutilizáveis e times que compartilham curiosidade.</p>
+        <p>Hoje, meu foco está em criar produtos escaláveis com React, TypeScript e Node.js — sempre cuidando da
+          performance, acessibilidade e das pessoas por trás dos dados.</p>
+        <ul class="principios">
+          <li><span aria-hidden="true">&lt;/&gt;</span><strong>Arquitetura<br />limpa</strong></li>
+          <li><span aria-hidden="true">♡</span><strong>Produto com<br />propósito</strong></li>
+          <li><span aria-hidden="true">♧</span><strong>Colaboração<br />real</strong></li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section id="projetos">
-        <header>
-          <p>02 — projetos</p>
-          <h2>Trabalho selecionado</h2>
-          <p>
-            Uma seleção de produtos e sistemas que tive o prazer de pensar,
-            construir e evoluir.
-          </p>
-        </header>
+    <section class="projetos secao-escura" id="projetos">
+      <div class="cabecalho-secao">
+        <div>
+          <p class="rotulo"><span>02</span> projetos</p>
+          <h2>Trabalho <em>selecionado</em></h2>
+          <p>Uma seleção de produtos e sistemas que tive o prazer de pensar, construir e evoluir.</p>
+        </div>
+        <a class="link-texto" href="#contato">Ver mais projetos <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="grade-projetos">
+        <article class="cartao-projeto">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Código em um notebook" />
+          <div>
+            <h3>Plataforma de Aprendizado</h3>
+            <p>React · Node.js · PostgreSQL</p><a class="seta-redonda" href="#contato"
+              aria-label="Conheça a Plataforma de Aprendizado">↗</a>
+          </div>
+        </article>
+        <article class="cartao-projeto">
+          <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Servidores e computação em nuvem" />
+          <div>
+            <h3>Sistema em Nuvem</h3>
+            <p>Docker · Kubernetes · AWS</p><a class="seta-redonda" href="#contato"
+              aria-label="Conheça o Sistema em Nuvem">↗</a>
+          </div>
+        </article>
+        <article class="cartao-projeto">
+          <img
+            src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Aplicativo aberto em um celular" />
+          <div>
+            <h3>Aplicativo móvel</h3>
+            <p>React Native · TypeScript</p><a class="seta-redonda" href="#contato"
+              aria-label="Conheça o aplicativo móvel">↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <section id="certificados">
-        <header>
-          <p>03 — aprendizado</p>
-          <h2>Sempre em movimento</h2>
-          <p>
-            Conhecimento só vale quando continua abrindo novas possibilidades.
-          </p>
-        </header>
-        <ul>
-          <li>Todos</li>
-          <li>React</li>
-          <li>TypeScript</li>
-          <li>Performance</li>
-          <li>Docker</li>
-          <li>Cloud</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>Arquitetura</li>
-        </ul>
-        <article>
-          <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
-            alt="Pessoa estudando React e performance"
-          />
-          <h3>
-            <a href="/certificados/react-avancado-arquitetura-e-performance">
-              React Avançado: Arquitetura e Performance
-            </a>
-          </h3>
-          <p>React · TypeScript · Performance</p>
-          <p>42 horas</p>
-        </article>
-        <article>
-          <img
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80"
-            alt="Tecnologia de computação em nuvem"
-          />
-          <h3>
-            <a href="/certificados/cloud-native-developer">Cloud Native Developer</a>
-          </h3>
-          <p>Docker · Kubernetes · Cloud</p>
-          <p>36 horas</p>
-        </article>
-        <article>
-          <img
-            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
-            alt="Código em uma tela de computador"
-          />
-          <h3>
-            <a href="/certificados/engenharia-de-software">Engenharia de Software</a>
-          </h3>
-          <p>Java · Python · Arquitetura</p>
-          <p>80 horas</p>
-        </article>
-      </section>
+    <section class="formacao secao-clara" id="formacao">
+      <div class="introducao-secao">
+        <p class="rotulo"><span>03</span> formação</p>
+        <h2>Sempre em <em>movimento</em></h2>
+        <p>Conhecimento só vale quando continua abrindo novas possibilidades.</p>
+      </div>
+      <div class="conteudo-formacao">
+        <div class="filtros" aria-label="Filtrar formação">
+          <a class="ativo" href="#formacao">Todos</a><a href="#formacao">React</a><a href="#formacao">TypeScript</a><a
+            href="#formacao">Performance</a><a href="#formacao">Docker</a><a href="#formacao">Nuvem</a><a
+            href="#formacao">Java</a><a href="#formacao">Python</a><a href="#formacao">Arquitetura</a>
+        </div>
+        <div class="grade-cursos">
+          <article class="cartao-curso"><img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+              alt="Código em editor de texto" />
+            <h3><a href="#contato">React Avançado: Arquitetura e Performance <span>→</span></a></h3>
+            <p>React · TypeScript · Performance</p><small>◷ 42 horas</small>
+          </article>
+          <article class="cartao-curso"><img
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+              alt="Ilustração de computação em nuvem" />
+            <h3><a href="#contato">Desenvolvedor nativo da nuvem <span>→</span></a></h3>
+            <p>Docker · Kubernetes · Nuvem</p><small>◷ 36 horas</small>
+          </article>
+          <article class="cartao-curso"><img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+              alt="Código em uma tela" />
+            <h3><a href="#contato">Engenharia de Software</a></h3>
+            <p>Java · Python · Arquitetura</p><small>◷ 80 horas</small>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <section id="contato">
-        <header>
-          <p>04 — contato</p>
-          <h2>Vamos criar algo relevante?</h2>
-          <p>
-            Tem uma ideia, um produto para evoluir ou só quer trocar uma ideia
-            sobre tecnologia? Minha caixa de entrada está aberta.
-          </p>
-        </header>
-        <address>
-          <a href="https://www.linkedin.com/in/aymarsilva/">LinkedIn: linkedin.com/in/aymarsilva</a>
-        </address>
-      </section>
-    </main>
-  </body>
-</html>
-  </body>
+    <section class="contato secao-escura" id="contato">
+      <div class="texto-contato">
+        <p class="rotulo"><span>04</span> contato</p>
+        <h2>Vamos criar<br />algo <em>relevante?</em></h2>
+        <p>Tem uma ideia, um produto para evoluir? Minha caixa de entrada está aberta.</p>
+      </div>
+      <div class="links-contato">
+        <a href="mailto:aymar.silva.dev@gmail.com"><span
+            class="icone-contato">@</span><span><small>E-mail</small><strong>aymar.silva.dev@gmail.com</strong></span></a>
+        <a href="https://github.com/AymarSilva" target="_blank" rel="noopener noreferrer"><span
+            class="icone-contato">◖</span><span><small>GitHub</small><strong>github.com/AymarSilva</strong></span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape-site">
+    <a class="marca" href="#inicio">aymar<span>.dev</span></a>
+    <p>Construindo o próximo. <span>© Aymar Silva</span></p>
+  </footer>
+</body>
+
 </html>
