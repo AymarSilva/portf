@@ -368,11 +368,55 @@ nav a:hover,
 .conteudo-formacao {
   min-width: 0;
 }
-.filtros {
+.filtros-controle {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 8px;
   margin-bottom: 24px;
+}
+.filtros-janela {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+.filtros {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+.filtros a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.filtros a:nth-child(n + 6) {
+  display: none;
+}
+.filtros-seta {
+  background: transparent;
+  border: 1px solid #c8c2b8;
+  border-radius: 50%;
+  color: var(--ink);
+  cursor: default;
+  flex: 0 0 28px;
+  font-size: 1.25rem;
+  height: 28px;
+  line-height: 1;
+  padding: 0 0 3px;
+  width: 28px;
+}
+.filtros-seta:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+.filtros-seta:not(:disabled):hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: var(--white);
 }
 .filtros a {
   font-size: 0.68rem;
@@ -557,9 +601,6 @@ nav a:hover,
   }
   .conteudo-formacao {
     margin-top: 35px;
-  }
-  .filtros {
-    gap: 14px;
   }
   .links-contato {
     margin-top: 35px;
